@@ -392,6 +392,30 @@ body {
     font-size: 24px;
 }
 
+.nav-links {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-github {
+    color: var(--primary-color);
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 48px;
+}
+
+.nav-github:hover {
+    opacity: 1;
+}
+
+.nav-github i {
+    font-size: 24px;
+}
+
 /* Adjust main content padding */
 main {
     padding-top: 20px;
