@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #1976d2;
+  --background-color: #f5f5f5;
+  --card-background: #ffffff;
+  --text-color: #333333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Homepage Styles */
+.songs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.song-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.song-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.song-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.song-title {
+  color: var(--primary-color);
+  margin: 0 0 8px 0;
+  font-size: 1.5em;
+}
+
+.song-artists {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+/* Lyrics Page Styles */
+.lyrics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.lyrics-card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s ease;
+}
+
+.lyrics-card:hover {
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.lyrics-title {
+  color: var(--primary-color);
+  margin: 0 0 24px 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+.lyrics-content {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.lyrics-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.lyrics-column h2 {
+  color: var(--primary-color);
+  margin: 0 0 16px 0;
+  font-size: 1.5em;
+}
+
+.lyrics-text {
+  white-space: pre-wrap;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.l2 .lyrics-text {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .lyrics-content {
+    flex-direction: column;
+  }
+
+  .lyrics-column {
+    width: 100%;
+  }
+}

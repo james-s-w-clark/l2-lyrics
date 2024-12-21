@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends - L2 Lyrics</title>
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  
+  <style>
+    .fonts-loading * {
+      opacity: 0;
+    }
+  </style>
+  <script>
+    
+    document.documentElement.classList.add('fonts-loading');
+
+    
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        document.documentElement.classList.remove('fonts-loading');
+      });
+    } else {
+      
+      document.documentElement.classList.remove('fonts-loading');
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="/" class="nav-home">
+        <span class="material-icons">home</span>
+      </a>
+      <a href="/" class="nav-brand">
+        <h1 class="site-title">L2 Lyrics</h1>
+        <div class="site-tagline">studying through song</div>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    
+<div class="lyrics-container">
+  <h1 class="lyrics-title">Friends</h1>
+  <div class="artists">Marshmello, Anne-Marie</div>
+
+  
+  <div class="media-container">
+    
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jzD_yyEcp0M" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+    
+  </div>
+  
+
+  <div class="lyrics-content">
+    <div class="lyrics-card l2">
+      <div class="card-header">
+        <h2>Target Language</h2>
+        <button class="copy-btn" onclick="copyText(this, 'l2-text-e6b42af22b5432e3d80e9c6682b1ab93')">
+          <span class="material-icons">content_copy</span>
+        </button>
+      </div>
+      <div class="card-subheader">What you're learning</div>
+      <div class="lyrics-text" id="l2-text-e6b42af22b5432e3d80e9c6682b1ab93"><span class="h1">你不必担心</span>，
+我们<span class="h2">只是朋友</span>。
+我们说好了，
+我们只是朋友。
+<span class="h3">这不是爱情</span>，
+我们只是朋友。
+你不必担心，
+我们只是朋友。</div>
+    </div>
+    <div class="lyrics-card l1">
+      <div class="card-header">
+        <h2>Native Language</h2>
+        <button class="copy-btn" onclick="copyText(this, 'l1-text-e6b42af22b5432e3d80e9c6682b1ab93')">
+          <span class="material-icons">content_copy</span>
+        </button>
+      </div>
+      <div class="card-subheader">Translation / Study Notes</div>
+      <div class="lyrics-text" id="l1-text-e6b42af22b5432e3d80e9c6682b1ab93"><span class="h1">Don&rsquo;t worry</span>,
+We&rsquo;re <span class="h2">just friends</span>.
+We&rsquo;ve made it clear,
+We&rsquo;re just friends.
+It&rsquo;s <span class="h3">not love</span>,
+We&rsquo;re just friends.
+Don&rsquo;t worry about it,
+We&rsquo;re just friends.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function copyText(button, elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      const icon = button.querySelector('.material-icons');
+      icon.textContent = 'check';
+      setTimeout(() => {
+        icon.textContent = 'content_copy';
+      }, 2000);
+    });
+  }
+</script>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}L2 Lyrics{{ else }}{{ .Title }} - L2 Lyrics{{ end }}</title>
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- Prevent FOUC -->
+  <style>
+    .fonts-loading * {
+      opacity: 0;
+    }
+  </style>
+  <script>
+    // Add class while fonts are loading
+    document.documentElement.classList.add('fonts-loading');
+
+    // Remove class when fonts are ready
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        document.documentElement.classList.remove('fonts-loading');
+      });
+    } else {
+      // Fallback for browsers that don't support document.fonts
+      document.documentElement.classList.remove('fonts-loading');
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <a href="/" class="nav-home">
+        <span class="material-icons">home</span>
+      </a>
+      <a href="/" class="nav-brand">
+        <h1 class="site-title">L2 Lyrics</h1>
+        <div class="site-tagline">studying through song</div>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+</body>
+
+</html>

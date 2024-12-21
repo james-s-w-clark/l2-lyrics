@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="songs-container">
+    {{ range where .Site.RegularPages "Section" "songs" }}
+    <a href="{{ .RelPermalink }}" class="song-card-link">
+        <div class="song-card">
+            <h2 class="song-title">{{ .Title }}</h2>
+            {{ with .Params.artists }}
+            <div class="song-artists">
+                {{ delimit . ", " }}
+            </div>
+            {{ end }}
+        </div>
+    </a>
+    {{ end }}
+</div>
+{{ end }}

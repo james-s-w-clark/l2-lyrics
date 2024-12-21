@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>L2 Lyrics</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on L2 Lyrics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Friends</title>
+      <link>http://localhost:1313/songs/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/songs/friends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Happy Birthday</title>
+      <link>http://localhost:1313/songs/happy-birthday/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/songs/happy-birthday/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Moon Represents My Heart</title>
+      <link>http://localhost:1313/songs/moon-represents-my-heart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/songs/moon-represents-my-heart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Wheels on the Bus</title>
+      <link>http://localhost:1313/songs/wheels-on-the-bus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/songs/wheels-on-the-bus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Twinkle, Twinkle, Little Star</title>
+      <link>http://localhost:1313/songs/twinkle-star/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/songs/twinkle-star/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'L2 Lyrics'
+theme = 'l2-lyrics'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
