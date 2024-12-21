@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="{{"css/main.css" | absURL}}">
 
@@ -39,9 +40,14 @@
 <body>
   <nav class="navbar">
     <div class="nav-content">
-      <a href="{{ .Site.BaseURL }}" class="nav-home">
-        <span class="material-icons">home</span>
-      </a>
+      <div class="nav-links">
+        <a href="{{ .Site.BaseURL }}" class="nav-home">
+          <span class="material-icons">home</span>
+        </a>
+        <a href="https://github.com/james-s-w-clark/l2-lyrics" class="nav-github" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
       <a href="{{ .Site.BaseURL }}" class="nav-brand">
         <h1 class="site-title">L2 Lyrics</h1>
         <div class="site-tagline">studying through song</div>
