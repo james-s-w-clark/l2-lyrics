@@ -28,6 +28,15 @@ with your GitHub account, clone the repo
 
 ## deploying the website to GitHub Pages
 
+1. Go to your GitHub repository's Actions "General" setings, and change "Workflow Permissions" to have "Read and write permissions"
+    - The URL will be like this, but with your username: https://github.com/james-s-w-clark/l2-lyrics/settings/actions
 1. Go to your repository's "Pages" Settings
     - The url will be like this, but with your username: https://github.com/james-s-w-clark/l2-lyrics/settings/pages 
+1. For "Branch", choose `gh-pages`
+1. Wait a minute, and refresh the page. 
+1. At the top of the GitHub Pages page, it should now say something like `Your site is live at  https://james-s-w-clark.github.io/l2-lyrics/`. 
+
+Good job, your L2 Lyrics website is now live!
+You can view it from any device. 
+Adding content is easiest on a MacOS/Windows/Ubuntu device.
 ...
