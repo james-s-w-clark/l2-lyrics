@@ -28,5 +28,6 @@ with your GitHub account, clone the repo
 
 ## deploying the website to GitHub Pages
 
-
+1. Go to your repository's "Pages" Settings
+    - The url will be like this, but with your username: https://github.com/james-s-w-clark/l2-lyrics/settings/pages 
 ...
