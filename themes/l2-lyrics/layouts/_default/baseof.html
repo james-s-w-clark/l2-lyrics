@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
 
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="{{ " css/main.css" | relURL }}">
 
   <!-- Prevent FOUC -->
   <style>
@@ -39,10 +39,10 @@
 <body>
   <nav class="navbar">
     <div class="nav-content">
-      <a href="/" class="nav-home">
+      <a href="{{ "" | relURL }}" class="nav-home">
         <span class="material-icons">home</span>
       </a>
-      <a href="/" class="nav-brand">
+      <a href="{{ "" | relURL }}" class="nav-brand">
         <h1 class="site-title">L2 Lyrics</h1>
         <div class="site-tagline">studying through song</div>
       </a>

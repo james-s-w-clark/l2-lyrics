@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://james-s-w-clark.github.io/l2-lyrics/'
 languageCode = 'en-us'
 title = 'L2 Lyrics'
 theme = 'l2-lyrics'
