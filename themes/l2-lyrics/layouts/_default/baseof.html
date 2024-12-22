@@ -46,6 +46,12 @@
         <a href="{{ .Site.BaseURL }}" class="nav-home">
           <span class="material-icons">home</span>
         </a>
+        {{ if in .Site.BaseURL "github.io" }}
+        <a href="https://github.com/james-s-w-clark/l2-lyrics/edit/main/content/{{ .File.Path }}" class="nav-edit"
+          target="_blank" rel="noopener">
+          <span class="material-icons">edit</span>
+        </a>
+        {{ end }}
         <a href="https://github.com/james-s-w-clark/l2-lyrics" class="nav-github" target="_blank" rel="noopener">
           <i class="fa-brands fa-github fa-lg"></i>
         </a>
