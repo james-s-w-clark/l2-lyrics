@@ -416,6 +416,21 @@ body {
     font-size: 24px;
 }
 
+.nav-edit {
+    color: var(--primary-color);
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 48px;
+}
+
+.nav-edit:hover {
+    opacity: 1;
+}
+
 /* Adjust main content padding */
 main {
     padding-top: 20px;
