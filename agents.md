@@ -1,20 +1,22 @@
-# Project Agents
+# Agent Guidelines: L2 Lyric Implementation
 
-This file documents the AI agents that have contributed to this repository and their specific roles in shaping the `l2-lyrics` library.
+This document outlines the standard for implementing and refactoring lyrics within this library. Agents should follow these principles to ensure a consistent, reader-focused experience.
 
-## Antigravity (Google DeepMind)
-**Lead Refactorer & Lyric Analyst**
+## 1. L2 (Target Language) Standards
+- **Original Script**: Use the script originally used by the artist. Traditional Chinese for artists from Taiwan/Hong Kong; Simplified Chinese for artists from Mainland China.
+- **Purity**: No Pinyin, no HSK levels, and no emojis in the lyrics. The focus is on the poetic form of the characters.
+- **Soul & Context**: Preserve significant portions of the original performance (intros, iconic choruses, and bridges). The goal is a song, not a vocabulary list.
 
-### Focus Areas
-- **Minimalism**: Transitioned the library from metadata-heavy HSK lists to a clean, poetic experience.
-- **Linguistic Integrity**: Restored original character scripts (Traditional/Simplified) based on regional origins of the artists.
-- **Visual Mapping**: Implemented the `<span class="hX">` parallel highlighting system to map key Chinese phrases to their translations.
-- **Soul Preservation**: Ensured that refactored lyrics maintain enough context (intros, bridges) to preserve the song's musical and emotional flow.
+## 2. L1 (Reference Language) Standards
+- **Full-Sentence Translation**: Provide natural, evocative translations rather than direct word-for-word substitutions.
+- **Minimalism**: Focus on the core imagery. Avoid extra examples or "HSK-style" fluff. Leave room for the reader's imagination.
 
-### Contributions
-- Standardized 34+ lyric files into the `l2/l1` TOML format.
-- Verified and corrected high-impact lyrics (e.g., *平凡之路*, *光年之外*).
-- Optimized the homepage card layout for clean navigation.
+## 3. Highlighting System (`hX` Spans)
+- **Parallel Spans**: Use `<span class="h1">`, `<span class="h2">`, etc., to link interesting phrases in the L2 text to their corresponding meaning in the L1 text.
+- **Selective Mapping**: Highlight key phrases, idioms, or beautiful imagery that a learner might want to look closer at. 
+- **Consistency**: Ensure the `hX` ID in the L2 string matches the exact meaning and ID in the L1 string.
 
----
-*Last updated: April 10, 2026*
+## 4. Frontmatter Standards
+- **Title**: Original song name (with common English name in parentheses if available).
+- **Artists**: Always format as `(Chinese Name | English Name)` – e.g., `(告五人 | Accusefive)`.
+- **YouTube**: Use high-quality official music videos or official lyric videos.
